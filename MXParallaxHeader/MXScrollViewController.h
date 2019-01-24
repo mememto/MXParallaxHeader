@@ -39,6 +39,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic,strong,nullable) UIViewController *headerViewController;
 
+@property (nonatomic,weak) IBOutlet UIView *headerView;
+@property (nonatomic) IBInspectable CGFloat headerHeight;
+@property (nonatomic) IBInspectable CGFloat headerMinimumHeight;
+
 /**
  The child view controller to be added to the scroll view.
  */
